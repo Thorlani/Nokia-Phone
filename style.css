@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #5b6b8c;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.body {
+    display: block;
+    width: 230px;
+    height: 540px;
+    border: 3px solid #111;
+    border-top-left-radius: 58px;
+    border-top-right-radius: 58px;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    padding: 5px 10px 0px 10px;
+}
+
+.top {
+    height: 65%;
+    width: 100%;
+    background-color: #fff;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 6px 13px;
+    border: 2.5px solid #111;
+    border-right: 3px solid #111;
+}
+
+.layer {
+    width: 100%;
+    height: 90%;
+    background-color: #727f92;
+    border-top-left-radius: 14%;
+    border-top-right-radius: 14%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    padding: 0 10px;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.first {
+    width: 5px;
+    height: 70px;
+    background-color: #58657e;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 50%;
+    margin-top: 1rem;
+}
+
+.second {
+    background-color: #5a6885;
+    height: 64px;
+    width: 13px;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    border-top-right-radius: 80%;
+    border-top-left-radius: 80%;
+}
+
+.second > div {
+    width: 9px;
+    height: 5px;
+    background-color: #111;
+    margin: 7px 2px;
+    border-radius: 60%;
+}
+
+.third {
+    width: 4px;
+    height: 70px;
+    background-color: #7b859a;
+    border-top-right-radius: 40%;
+    border-top-left-radius: -10%;
+}
+
+.nokia {
+    color: #fff;
+    background-color: #111;
+    width: fit-content;
+    margin: 0 auto;
+    z-index: 4;
+    margin-top: -1.5rem;
+    border-radius: 4px;
+}
+.nokia span {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.screen {
+    margin-top: 1rem;
+    width: 100%;
+    height: 140px;
+    border-radius: 14px;
+    border: 1.6px solid #111;
+    border-bottom-right-radius: 22%;
+    border-bottom-left-radius: 22%;
+    background-color: #94bea8;
+}
+
+.screen .bars {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.screen .bars .batteries > div {
+    width: 9px;
+    height: 5px;
+    background-color: #233c34;
+    margin: 2px 2px;
+}
+
+.screen .bars .batteries .wone {
+    width: 8px;
+    height: 15px;
+}
+.screen .bars .batteries .two {
+    width: 6px;
+    height: 15px;
+}
+.screen .bars .batteries .three {
+    width: 4px;
+    height: 15px;
+}
+.screen .bars .batteries .four {
+    width: 2px;
+    height: 15px;
+}
+
+.screen .bars .network > div {
+    width: 9px;
+    height: 5px;
+    background-color: #233c34;
+    margin: 2px 3px;
+    z-index: 6;
+    position: relative;
+    left: 2px;
+}
+
+.screen .bars .network .one {
+    width: 8px;
+    height: 15px;
+}
+.screen .bars .network .ttwo {
+    width: 6px;
+    height: 15px;
+    left: 3.9px;
+}
+.screen .bars .network .three {
+    width: 4px;
+    height: 15px;
+    left: 5.7px;
+}
+.screen .bars .network .four {
+    width: 2px;
+    height: 15px;
+    left: 8px
+}
+
+.screen .text {
+    margin-top: 0px;
+    width: 200px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.screen .text textarea {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    word-break: break-word;
+    display: block;
+}
+
+.screen .text textarea::placeholder {
+    padding-top: 25px;
+    color: #111;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.screen .text #icon-for-menu {
+    margin-top: -10px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    place-content: center;
+    grid-template-columns: repeat(3, 25px);
+    gap: 15px;
+}
+
+.screen .text #calling {
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen .text #calling span {
+    font-size: 10px;
+    text-align: center;
+}
+
+
+.screen .menu {
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons > div {
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+}
+
+.buttons > div:hover {
+    cursor: pointer;
+}
+
+.buttons .third {
+    /* display: none; */
+    z-index: 8;
+    position: relative;
+    width: 70px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid;
+    top: 35px;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 20%;
+    transform: rotate(131deg);
+}
+
+.buttons .second {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border-radius: 60%;
+    z-index: 9;
+    top: 10px;
+    left: 20px;
+    background-color: #fff;
+    border: 1.5px solid;
+}
+
+.buttons .first {
+    position: relative;
+    height: 40px;
+    width: 25px;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid;
+    left: 12px;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-end-start-radius: 20%;
+    transform: rotate(141deg);
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(3, .5fr);
+    place-items: center;
+    grid-template-rows: repeat(3, 45px);
+}
+
+.bottom > div {
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 70%;
+    padding-top: 5px;
+}
+
+.grid-one, .grid-four, .grid-seven, .grid-ten {
+    transform: rotate(15deg);
+}
+.grid-three, .grid-six, .grid-nine, .grid-twelve {
+    transform: rotate(-15deg);
+}
+.grid-two, .grid-five, .grid-eight, .grid-eleven {
+    margin-top: 10px;
+}
+
+p {
+    text-transform: lowercase;
+    font-size: 10px;
+}
+
+p:hover {
+    cursor: pointer;
+}
+
+p > span {
+    font-size: 15px;
+    font-weight: bold;
+}
